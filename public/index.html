@@ -17,7 +17,10 @@
     <script>
       const countdownOptions = {
         target: document.querySelector('#countdown'),
-        message: 'SALE ON SELECT CLASSES ENDS ON',
+        props: {
+          message: 'SALE ON SELECT CLASSES ENDS ON',
+          end: 'Aug 1, 2022 00:00:00 GMT',
+        },
       }
       countdown(countdownOptions.target, countdownOptions.props)
     </script>
